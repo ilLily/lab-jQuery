@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03 treeTraversal</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td {
+            height: 40px;
+            width: 40px;
+            border: 1px dashed black;
+            text-align: center;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: pink;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box2 {
+            background: yellow;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tree Traversal</h1>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="box">2</div>
+                </td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div class="box">
+                        <div class="box2">2</div>
+                    </div>
+                </td>
+                <td>3</td>
+                <td class="stop">4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td class="stop">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="stop">2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./treeTraversal.js"></script>
+
+</body>
+
+</html>

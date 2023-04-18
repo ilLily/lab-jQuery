@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table {
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Basic Filter</h1>
+    </header>
+    <div class="container">
+        <ul class="list">
+            <li>a</li>
+            <li>b</li>
+            <li id="li1">c</li>
+            <li class="not">d</li>
+            <li>e</li>
+        </ul>
+        <ul class="list">
+            <li>a</li>
+            <li>a</li>
+            <li>b</li>
+        </ul>
+        <hr>
+        <ul class="">
+            <li>a</li>
+            <li>b</li>
+            <li id="li1">c</li>
+            <li class="not">d</li>
+            <li>e</li>
+        </ul>
+        <ul class="list">
+            <li>a</li>
+        </ul>
+
+
+        <p></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut sed fugit qui voluptatibus ad nesciunt
+            omnis itaque id voluptatum quod a corporis, odit aut error! Est architecto quibusdam quod.</p>
+        <p>Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officia possimus eius quo dicta
+            facilis,
+            quae beatae, enim neque eum aperiam quisquam sint, blanditiis ipsum commodi culpa vel libero deserunt!</p>
+        <p><span>MFEE36</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda incidunt expedita,
+            temporibus quidem non
+            tempora eaque nihil, perspiciatis odio magnam asperiores! Explicabo recusandae sed ea! Nisi fugit eos porro
+            animi?</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th class="not">2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td class="not">3</td>
+        </tr>
+        <tr>
+            <td class="not">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="../all.js"></script>
+    <script src="./basicFilter.js"></script>
+
+</body>
+
+</html>

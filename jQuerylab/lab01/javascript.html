@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-01</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Javascript</h1>
+    </header>
+    <div class="container">
+        <!-- <h3 id="firstTarget">Javascript</h3> -->
+        <h3 id="firstTarget" onmouseenter="changeColor(event)" onmouseleave="unChangeColor(event)">Javascript</h3>
+    </div>
+    <script>
+        let changeColor = (event) => {
+            event.target.style.color = "purple";
+        }
+        let unChangeColor = (event) => {
+            event.target.style.color = "black";
+        }
+
+        // let firstTarget = document.querySelector("#firstTarget");
+        // console.log(firstTarget);
+        // ===v1===
+        // firsttarget.addEventListener("mouseover", () => {
+        //     target.style.color = "purple";
+        // });
+        // firsttarget.addEventListener("mouseleave", () => {
+        //     target.style.color = "black";
+        // })
+
+        // ==v2==
+        // firstTarget.addEventListener("mouseenter", changeColor)
+        // firstTarget.addEventListener("mouseleave", unChangeColor)
+    </script>
+</body>
+
+</html>

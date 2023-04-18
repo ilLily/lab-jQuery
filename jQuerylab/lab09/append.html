@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leb09 append</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table {
+            width: 500px;
+            border: 2px solid pink;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid pink
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>append( ) prepend( ) before( ) after( ) appendTo() prependTo() empty() remove()</h1>
+    </header>
+    <div class="container">
+        <button id="append">append</button>
+        <button id="prepend">prepend</button>
+        <button id="appendTo">append To</button>
+        <button id="prependTo">prepend To</button>
+        <button id="after">after</button>
+        <button id="insertAfter">insertAfter</button>
+        <button id="before">before</button>
+        <button id="insertBefore">insertBefore</button>
+        <button id="empty">empty</button>
+        <button id="remove">remove</button>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            <tbody>
+                <tr id="move">
+                    <td>0 Gary</td>
+                    <td>garylee@ispan.com.tw</td>
+                    <td>66316588</td>
+                </tr>
+            </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./append.js"></script>
+
+</body>
+
+</html>

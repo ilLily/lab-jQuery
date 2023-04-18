@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG jQuery</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- 頁面還沒有載入,找不到 -->
+    <!-- <script>
+        console.log($("h1"));
+    </script> -->
+    <!-- 先載入再執行 -->
+    <!-- <script>
+        jQuery(document).ready(function () {
+            console.log($("h1"));
+        })
+    </script> -->
+    <!-- 先載入再執行 簡寫-->
+    <script>
+
+        $(function () {
+            console.log($("h1"));
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>NG jQuery</h1>
+    </header>
+    <div class="container">
+
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        console.log($('h1'));
+    </script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+
+</body>
+
+</html>

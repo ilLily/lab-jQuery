@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab06</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .div-card {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Form Event</h1>
+    </header>
+    <div class="container">
+        <form action="#">
+            <input type="text" id="input">
+            <div>
+                <input type="text" class="card-input" maxlength="4">
+                <input type="text" class="card-input" maxlength="4">
+                <input type="text" class="card-input" maxlength="4">
+                <input type="text" class="card-input" maxlength="4">
+            </div>
+            <div class="div-card">
+                <input type="text" maxlength="4" class="card-input1">
+            </div>
+            <div class="div-card">
+                <input type="text" maxlength="4" class="card-input1">
+            </div>
+            <div class="div-card">
+                <input type="text" maxlength="4" class="card-input1">
+            </div>
+            <div class="div-card">
+                <input type="text" maxlength="4" class="card-input1">
+            </div>
+            <hr>
+            <select name="" id="select">
+                <option value="TPE">台北市</option>
+                <option value="NTP">新北市</option>
+                <option value="TYN">桃園市</option>
+            </select>
+            <div id="target"></div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../all.js"></script>
+    <script>
+        $(function () {
+            $('#input').focus(function () {
+                console.log('foucs');
+            })
+            $('#input').blur(function () {
+                console.log('blur');
+            })
+            let maxLength = 4;
+            $('.card-input').keyup(function () {
+                console.log($(this).val().length);
+                let contentLength = $(this).val().length;
+                if (maxLength == contentLength) {
+                    $(this).next().focus();
+                }
+            })
+            $('.card-input1').keyup(function () {
+                let contentLength = $(this).val().length;
+                if (maxLength == contentLength) {
+                    $(this).parent().next().find('.card-input1').focus();
+                }
+            })
+
+            // change
+            $('#select').change(function () {
+                console.log($(this).val())
+                $('#target').text($(this).val());
+            })
+        });
+    </script>
+</body>
+
+</html>

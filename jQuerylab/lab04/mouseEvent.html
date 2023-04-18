@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04 MouseEvent</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        div.out {
+            height: 250px;
+            width: 40%;
+            margin: 0 15px;
+            background-color: lightblue;
+            float: left;
+        }
+
+        div.in {
+            width: 60%;
+            height: 60%;
+            background-color: lightgreen;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mouse Event </h1>
+    </header>
+    <div class="container">
+        <button id="btn">Button</button>
+        <hr>
+        <div class="out overout">
+            <span>move your mose</span>
+            <div class="in over"></div>
+        </div>
+
+        <div class="out enterleave">
+            <span>move your mouse</span>
+            <div class="in enter"></div>
+        </div>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./mouseEvent.js"></script>
+
+</body>
+
+</html>

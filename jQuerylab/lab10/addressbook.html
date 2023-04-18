@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10 address book</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table {
+            border: 2px solid pink;
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        th,
+        td {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AddressBook</h1>
+    </header>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="name" placeholder="請輸入姓名">
+        </div>
+        <div class="input">
+            <input type="text" id="phone" placeholder="請輸入電話">
+        </div>
+        <div class="input">
+            <input type="text" id="address" placeholder="請輸入地址">
+        </div>
+        <button id="add">Add</button>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Phone</td>
+                    <td>Address</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./addressbook.js"></script>
+
+</body>
+
+</html>

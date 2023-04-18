@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selector</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Font Selector</h1>
+    </header>
+    <div class="container">
+        <form action="" class="form1">
+            <input type="checkbox" name="checkGroup" value="1">1
+            <input type="checkbox" name="checkGroup" value="2" disabled>2
+            <input type="checkbox" name="checkGroup" value="3">3
+        </form>
+        <form action="">
+            <input type="checkbox" name="checkGroup" value="4" disabled>4
+            <input type="checkbox" name="checkGroup" value="5">5
+            <select name="selectGroup" id="select">
+                <option value="11">11</option>
+                <option value="22">22</option>
+                <option value="33">33</option>
+            </select>
+        </form>
+        <hr>
+        <input type="button" value=":checked" id="checkedBtn">
+        <input type="button" value=":select" id="selectBtn">
+        <input type="button" value=":disabled" id="disableBtn">
+
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./formSelector.js"></script>
+
+</body>
+
+</html>
