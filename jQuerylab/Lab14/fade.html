@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 14 animation</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            position: relative;
+            top: 150;
+            left: 150;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>fade() slide() show() xxxToggle()</h1>
+    </header>
+    <div class="container">
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+        <br>
+        <button id="fadeIn">fadeIn</button>
+        <button id="fadeOut">fadeOut</button>
+        <button id="fadeToggle">fadeToggle</button>
+        <br>
+        <button id="slideUp">slideUp</button>
+        <button id="slideDown">slideDown</button>
+        <br>
+        <button id="moveRight">move right</button>
+        <button id="moveLeft">move left</button>
+        <hr>
+        <div class="box"></div>
+        
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./fade.js"></script>
+
+</body>
+
+</html>

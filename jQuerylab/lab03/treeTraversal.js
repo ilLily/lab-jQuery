@@ -1,6 +1,6 @@
 $(function () {
     $("td").on('click', function () {
-        // //所有td
+        //所有td
         // $(this).css("background", "blue");
         // //td第一層children有box的
         // $(this).children('.box').css("background", "lightgreen");

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab12 slideshow</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .wrap{
+            width: 800px;
+            height:400px;
+            background-color: black;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide-img{
+            list-style: none;
+            padding:0;
+            margin:0;
+            left:0;
+            position:absolute;
+            display:flex;
+            width: 4000px; 
+            transition: all 1s;
+        }
+        .slide-img li{
+            width: 800px;
+            height:400px;
+        }
+        .slide-img li img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .pages{
+            position: absolute;
+            list-style:none;
+            margin: 0;
+            padding:0;
+            display: flex;
+            bottom: 10px;
+            width: 100%;
+            justify-content: center;
+            
+        }
+        .pages li{
+            border: 1px solid white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        .pages li.active{
+            background-color: white;
+        }
+        .slide-arrow{
+            position: absolute;
+            z-index: 1;
+            color: white;
+            padding: 10px;
+            font-size: 36px;
+            height: 100%;
+            display:flex;
+            align-items: center;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        .slide-arrow:hover{
+            opacity: 1;
+        }
+        .right{
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>slide show</h1>
+    </header>
+    <div class="container">
+        <div class="wrap">
+            <a class="slide-arrow" id="slidePrev">L</a>
+            <a class="slide-arrow right" id="slideNext">R</a>
+            <ul class="slide-img" id="slideImgs">
+                <li><img src="./img/1.avif" alt=""></li>
+                <li><img src="./img/2.avif" alt=""></li>
+                <li><img src="./img/3.avif" alt=""></li>
+                <li><img src="./img/4.avif" alt=""></li>
+                <li><img src="./img/5.jpg" alt=""></li>
+            </ul>
+            <ul class="pages">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+        </div>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./slideshow.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab11 checkall</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table{
+            border: 2px solid pink;
+            border-collapse: collapse;
+        }
+        th,td{
+            border-bottom:1px solid pink;
+            width: 80px;
+            align-items: center;
+        }
+        tr.active{
+            background-color:bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>checkall</h1>
+    </header>
+    <div class="container">
+<table>
+    <thead>
+        <tr>
+            <th><input type="checkbox" id="checkAll"></th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="content">
+            <td>
+                <input type="checkbox" class="checkbox">
+            </td>
+            <td>
+                Gary
+            </td>
+            <td>2023/04/21</td>
+            <td>jQuery</td>
+        </tr>
+        <tr class="content">
+            <td>
+                <input type="checkbox" class="checkbox">
+            </td>
+            <td>
+                Lily
+            </td>
+            <td>2023/04/21</td>
+            <td>jQuery</td>
+        </tr>
+        <tr class="content">
+            <td>
+                <input type="checkbox" class="checkbox">
+            </td>
+            <td>
+                Lorn
+            </td>
+            <td>2023/04/21</td>
+            <td>jQuery</td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./checkall.js"></script>
+
+</body>
+
+</html>

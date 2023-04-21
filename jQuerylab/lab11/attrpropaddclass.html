@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 attr() prop() addclass()</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        img{
+            width:200px;
+            height:auto;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            transition: all 1s;
+        }
+        .box.active{
+            height: 200px;
+            background-color: pink;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> attr() prop() addclass() toggle</h1>
+    </header>
+
+    <div class="container">
+        <img id="img" src="../Lab07/octopus.jpg" alt="octopus" title="Octopus">
+        <button id="getAttr">getAttr</button>
+        <button id="setAttr">setAttr</button>
+        <button id="removeAttr">removeAttr</button>
+        <hr>
+        <button id="getProp">get prop</button>
+        <button id="setProp">set prop</button>
+        <input type="checkbox" id="checkbox">同意條款
+        <button id="confirm" disabled>confirm</button>
+        <hr>
+        <div class="box"></div>
+        <br>
+        <button id="addClass">add Class</button>
+        <button id="removeClass">remove Class</button>
+        <button id="toggleClass">toggle Class</button>
+    </div>
+
+    <script src="../jquery-3.6.4.js"></script>
+    <script src="./attrpropaddclass.js"></script>
+
+</body>
+
+</html>
